@@ -8,6 +8,6 @@ class CreateCities < ActiveRecord::Migration
       t.timestamps
     end
     add_index :cities, :tour_id
-    add_index :cities, :contact_person_id
+    #add_index :cities, :contact_person_id
   end
 end
