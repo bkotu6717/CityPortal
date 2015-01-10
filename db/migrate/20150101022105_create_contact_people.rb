@@ -13,7 +13,7 @@ class CreateContactPeople < ActiveRecord::Migration
       t.timestamps
     end
     add_index :contact_people, :city_id
-    add_index :contact_people, :postal_code_id
+   # add_index :contact_people, :postal_code_id
     add_index :contact_people, :state_id
   end
 end

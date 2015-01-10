@@ -1,8 +1,8 @@
 CityPortal::Application.routes.draw do
   get "tours/index"
 
-  devise_for :users
-
+  # devise_for :users
+  devise_for :users, controllers: { registrations: 'registrations' }
   get "home/index"
 
   # The priority is based upon order of creation:

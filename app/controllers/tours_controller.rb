@@ -12,8 +12,8 @@ class ToursController < ApplicationController
   end
 
   def create
-  	@tour = Tour.new(params[:tour])
-  	respond_to do |format|
+    @tour = Tour.new(params[:tour])
+    respond_to do |format|
   		if @tour.save
   			format.html { redirect_to action: 'show', controller: 'tours', id: @tour }
   		else
