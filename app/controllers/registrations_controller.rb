@@ -7,8 +7,6 @@ class RegistrationsController < Devise::RegistrationsController
 
 	def create
 		@user =  User.create(sign_up_params)
-		puts @user.inspect
-		render :text => "this is testing"
 	end
 
 	def update

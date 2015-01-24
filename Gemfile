@@ -4,7 +4,7 @@ gem 'rails', '3.2.20'
 gem 'devise'
 gem 'therubyracer'
 gem 'jquery-rails'
-gem 'less-rails-bootstrap'
+gem 'bootstrap-sass', '~> 2.3.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,10 +12,11 @@ gem 'less-rails-bootstrap'
 gem 'mysql2'
 
 gem 'strong_parameters'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
-group :development do
-  gem "better_errors"
-end
+# group :development do
+#   gem "better_errors"
+# end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

@@ -11,7 +11,7 @@
 			<tr>
 				<td> <%= tour.title %> </td>
 				<td><%=tour.description %> </td>
-				<td><%=tour.contact_persons %></td>
+				<td><%#=tour.contact_persons %></td>
 				<td><%=link_to 'Edit', {action: 'edit', id: tour.id} %> | <%=link_to 'Delete', {action: 'destroy', id: tour.id} %></td>
 			</tr>
 		<% end %>

@@ -1,13 +1,13 @@
 CityPortal::Application.routes.draw do
-  get "tours/index"
-
-  # devise_for :users
   devise_for :users, controllers: { registrations: 'registrations' }
-  get "home/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  root to: "home#index"
+   resources :people do
+    get "delete"
+  end
+  root to: "tours#index"
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
