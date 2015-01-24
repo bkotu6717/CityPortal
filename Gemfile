@@ -1,11 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.20'
-gem 'devise'
-gem 'therubyracer'
-gem 'jquery-rails'
-gem 'bootstrap-sass', '~> 2.3.2'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -14,14 +8,19 @@ gem 'mysql2'
 gem 'strong_parameters'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
-# group :development do
-#   gem "better_errors"
-# end
+group :development do
+  gem 'remotipart', '~> 1.2'
+  gem 'rails', '3.2.20'
+	gem 'devise'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'therubyracer'
+	gem 'jquery-rails'
+	gem 'bootstrap-sass', '~> 2.3.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

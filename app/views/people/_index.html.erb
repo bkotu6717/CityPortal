@@ -3,7 +3,7 @@
     <td><%= person.first_name %></td>
     <td><%= person.middle_name %></td>
     <td><%= person.last_name %></td>
-    <td><%#= image_tag person.avatar.url(:medium) %></td>
+    <td><%= image_tag person.avatar.url(:medium) %></td>
      <td><%= link_to "Edit", edit_person_path(person), remote: true, class: "btn" %></td>
     <td><%= link_to "Delete", person_delete_path(person), remote: true, class: "btn btn-danger" %></td>
   </tr>
