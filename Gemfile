@@ -12,6 +12,7 @@ group :development do
   gem 'remotipart', '~> 1.2'
   gem 'rails', '3.2.20'
 	gem 'devise'
+  gem "activeadmin", github: "gregbell/active_admin"
 end
 # Gems used only for assets and not required
 # in production environments by default.
